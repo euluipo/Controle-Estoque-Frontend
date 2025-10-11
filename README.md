@@ -1,4 +1,4 @@
-# Sistema de Controle de Estoque 📦
+# Sistema de Controle de Estoque 📦 - Repositório Front-End
 
 Projeto desenvolvido para a disciplina **Sistemas Distribuídos e Mobile** da **Universidade do Sul de Santa Catarina - UNISUL**.
 
