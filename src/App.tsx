@@ -5,6 +5,7 @@ import DashboardPage from './components/pages/DashboardPage/DashboardPage';
 import MainLayout from './components/pages/Layout/MainLayout';
 import ProtectedRoute from './config/ProtectedRoute';
 import CategoriasPage from './components/pages/CategoriasPage/CategoriasPage';
+import MovimentacoesPage from './components/pages/MovimentacoesPage/MovimentacoesPage';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,9 @@ const router = createBrowserRouter([
             path: '/categorias',
             element: <CategoriasPage />,
           },
+          { path: '/movimentacoes', 
+            element: <MovimentacoesPage />
+          }
         ],
       },
     ],
