@@ -6,6 +6,9 @@ import styles from './AuthPage.module.css';
 import api from '../../../services/api';
 import { useAuth } from '../../../context/AuthContext';
 
+import logoTransparente from '../../../assets/images/logo-a3-transparent.png';
+import logoBranca from '../../../assets/images/logo-a3-branca-transparent.png';
+
 const AuthPage = () => {
   const [isSignUpActive, setIsSignUpActive] = useState(false);
   const navigate = useNavigate();
@@ -74,6 +77,7 @@ const AuthPage = () => {
       <div className={`${styles.formContainer} ${styles.signUpContainer}`}>
         {/* --- Formulário de Registro --- */}
         <form onSubmit={handleSignUpSubmit}>
+          <img src={logoTransparente} alt="Logo A3" className={styles.logo} />
           <input type="text" placeholder="Nome" value={signUpNome} onChange={e => setSignUpNome(e.target.value)} required />
           <input type="text" placeholder="Usuário" value={signUpUsuario} onChange={e => setSignUpUsuario(e.target.value)} required />
           <input type="email" placeholder="Email" value={signUpEmail} onChange={e => setSignUpEmail(e.target.value)} required />
@@ -86,6 +90,7 @@ const AuthPage = () => {
       <div className={`${styles.formContainer} ${styles.signInContainer}`}>
         {/* --- Formulário de Login --- */}
         <form onSubmit={handleSignInSubmit}>
+          <img src={logoTransparente} alt="Logo A3" className={styles.logo} />
           <h1>Entrar</h1>
           <input type="text" placeholder="Usuário" value={signInUsuario} onChange={e => setSignInUsuario(e.target.value)} required />
           <input type="password" placeholder="Senha" value={signInSenha} onChange={e => setSignInSenha(e.target.value)} required />
@@ -97,6 +102,7 @@ const AuthPage = () => {
       <div className={styles.overlayContainer}>
         <div className={styles.overlay}>
           <div className={`${styles.overlayPanel} ${styles.overlayLeft}`}>
+            <img src={logoBranca} alt="Logo A3" className={styles.logo} />
             <h1>Bem-vindo de Volta!</h1>
             <p>Para se manter conectado conosco, por favor, entre com suas informações pessoais</p>
             <button className={styles.ghost} onClick={() => setIsSignUpActive(false)}>
@@ -104,6 +110,7 @@ const AuthPage = () => {
             </button>
           </div>
           <div className={`${styles.overlayPanel} ${styles.overlayRight}`}>
+            <img src={logoBranca} alt="Logo A3" className={styles.logo} />
             <h1>Olá, Amigo!</h1>
             <p>Insira seus dados pessoais e comece sua jornada conosco</p>
             <button className={styles.ghost} onClick={() => setIsSignUpActive(true)}>

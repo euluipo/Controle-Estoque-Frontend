@@ -11,7 +11,7 @@ const MainLayout = () => {
   return (
     <div className={styles.layoutContainer}>
       <aside className={styles.sidebar}>
-        <h2>Oak System</h2>
+        <h2>Controle de Estoque A3</h2>
         <ul className={styles.navList}>
           <li className={styles.navItem}><NavLink to="/dashboard">Dashboard</NavLink></li>
           <li className={styles.navItem}><NavLink to="/produtos">Produtos</NavLink></li>
