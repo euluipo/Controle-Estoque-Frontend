@@ -7,6 +7,8 @@ Projeto desenvolvido para a disciplina **Sistemas Distribuídos e Mobile** da **
 
 **Link Repositório Back-end:** https://github.com/euluipo/Controle-Estoque-Backend
 
+**Link Repositório Front-end React:** https://github.com/euluipo/Controle-Estoque-Frontend-React
+
 ---
 
 ## 🎓 Informações Acadêmicas
