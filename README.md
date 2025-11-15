@@ -31,21 +31,29 @@ Projeto desenvolvido para a disciplina **Sistemas Distribuídos e Mobile** da **
 
 Este cliente consome os seguintes recursos do back-end:
 
-### ✅ Requisitos Funcionais
-1.  O sistema permite o **cadastro, consulta, atualização e exclusão de produtos e categorias** por meio de **API REST** (`/api/produtos`, `/api/categorias`).
-2.  O sistema possibilita o **registro de movimentações de estoque**, diferenciando **entradas e saídas**.
-3.  O sistema permite o **reajuste de preços**, tanto de forma **unitária** quanto **em massa**, com base em um percentual definido pelo usuário.
-4.  O sistema gera **relatórios consolidados** de produtos, movimentações e balanço geral.
-5.  O sistema permite a **consulta e exibição da lista de preços atualizada**.
-6.  O sistema oferece **autenticação e controle de usuários**, restringindo o acesso a endpoints protegidos.
-7.  O sistema permite **integração com banco de dados relacional**, garantindo persistência confiável dos dados.
+## ✅ Requisitos Funcionais (RF)
+
+| ID | Descrição |
+| :--- | :--- |
+| **RF-001** | O sistema deve permitir o **cadastro, consulta, atualização e exclusão (CRUD)** de produtos e categorias por meio da API REST (`/api/produtos`, `/api/categorias`). |
+| **RF-002** | O sistema deve possibilitar o **registro de movimentações de estoque**, diferenciando entradas e saídas. |
+| **RF-003** | O sistema deve permitir o **reajuste de preços** de produtos, tanto de forma unitária quanto em massa (com base em um percentual). |
+| **RF-004** | O sistema deve gerar **relatórios consolidados** de produtos, movimentações e balanço geral. |
+| **RF-005** | O sistema deve permitir a **consulta e exibição da lista de preços** atualizada. |
+| **RF-006** | O sistema deve oferecer **autenticação e controle de usuários**, restringindo o acesso a endpoints protegidos. |
+| **RF-007** | O sistema deve permitir a **integração com banco de dados relacional** para garantir a persistência confiável dos dados. |
 
 ---
 
-### ⚙️ Requisitos Não Funcionais
-1.  Desenvolvido em **Java 21** com a biblioteca **Swing** para a interface gráfica (GUI).
-2.  Arquitetura **Cliente-Servidor**. Este projeto é o cliente desktop.
-3.  Comunicação com o servidor back-end realizada via **requisições HTTP** para uma **API REST**.
-4.  Gerenciamento de dependências do projeto feito com **Apache Maven** (conforme `pom.xml`).
-5.  Uso de **DTOs (Data Transfer Objects)** para a troca de dados (serialização/desserialização) com o back-end, no formato **JSON**.
-6.  Implementação de **lógica de autenticação no lado do cliente** (`AuthManager`, `LoginFrame`) para gerenciar o estado do usuário e o token de acesso (JWT).
+## ⚙️ Requisitos Não Funcionais (RNF)
+
+Estes requisitos descrevem **como** o sistema deve operar ou as restrições técnicas (qualidade, desempenho, tecnologia).
+
+| ID | Descrição |
+| :--- | :--- |
+| **RNF-001** | O cliente desktop deve ser desenvolvido em **Java 21** com a biblioteca **Swing** para a interface gráfica (GUI). |
+| **RNF-002** | A arquitetura do sistema deve seguir o modelo **Cliente-Servidor** (este projeto é o cliente). |
+| **RNF-003** | A comunicação com o servidor back-end deve ser realizada via **requisições HTTP** para uma API REST. |
+| **RNF-004** | O gerenciamento de dependências do projeto deve ser feito com **Apache Maven**. |
+| **RNF-005** | A troca de dados com o back-end deve ser feita usando **DTOs (Data Transfer Objects)** no formato **JSON**. |
+| **RNF-006** | O cliente deve implementar a **lógica de autenticação** (`AuthManager`, `LoginFrame`) para gerenciar o estado do usuário e o token de acesso (JWT). |
