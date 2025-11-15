@@ -33,6 +33,8 @@ Este cliente consome os seguintes recursos do back-end:
 
 ## ✅ Requisitos Funcionais (RF)
 
+Estes requisitos descrevem **o que** o sistema deve fazer (as funcionalidades).
+
 | ID | Descrição |
 | :--- | :--- |
 | **RF-001** | O sistema deve permitir o **cadastro, consulta, atualização e exclusão (CRUD)** de produtos e categorias por meio da API REST (`/api/produtos`, `/api/categorias`). |
